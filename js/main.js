@@ -10,8 +10,46 @@ $(function(){
         {id: 8, name: 'Division 5', parent: 1},
         {id: 5, name: 'Sub Division', parent: 3},
     ];
+    // var style = 
+    // {
+    //     fill:'#387',
+    //     stroke: '#222',
+    //     strokeWidth: 3
+    // }
 
+    // var paper = Snap('#graph');
+    
+    // var circle = paper.circle(50,50,30);
+    // circle
+    // .attr(style)
+    // .drag();
+    
+    // var path = paper
+    //             .path("")
+    //             .attr({
+    //                 stroke: "#222",
+    //                 fill: "transparent",
+    //                 strokeWidth: 3
+    //             })
 
+    // paper.click(function(e){
+    //     if(e.target.tagName == 'svg') {
+    //         paper.circle(e.offsetX,e.offsetY,30)
+    //             .attr(style)
+    //             .drag()
+    //         var pathString = path.attr('d');
+    //         var coords = e.offsetX + "," + e.offsetY;
+            
+    //         if(pathString)
+    //             pathString += "L "+coords;
+    //         else 
+    //             pathString += "M "+coords;
+
+    //         path.attr({
+    //             d : pathString
+    //         });
+    //     }
+    // });
 });
 
 

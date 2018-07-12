@@ -3,11 +3,11 @@
     text-transform: uppercase;
 }
 .h-c span:first-child {
-    border-bottom: 3px solid #497e00;
+    border-bottom: 3px solid #387;
 }
 .h-c span:last-child {
     font-weight: 400; 
-    color:#497e00;
+    color:#387;
 }
 .table thead tr th {
     text-align: center;
@@ -17,4 +17,76 @@
 }
 .footer a{
     margin: 0 10px;
+}
+#graph {
+    height: 500px;
+    width: 100%;
+}
+
+/* #Region Temp */
+.graph {
+    color: #3C3C3C;
+    text-align: center;
+    position: relative;
+}
+.graph .node {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #387;
+    border-radius: 50%;
+}
+.graph .node:first-child {
+    left: 50%;
+}
+.value {
+    position: absolute;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+}
+.child {
+    margin: 30px auto;
+    width: 120px;
+}
+.node .node.left-node {
+    left: -50px;
+}
+.node .node.right-node {
+    left: 50px;
+}
+.child .node .primary {
+    margin-top: 50px; 
+}
+.child .node.left-node .primary {
+    left: -50px;
+}
+.child .node.right-node .primary {
+    left: 50px;
+}
+.right-node:before,
+.right-node .node.primary:before{
+    position: absolute;
+    display: block;
+    content: '';
+    left: -25px;
+    top: -10px;
+    transform: rotateZ(45deg);
+    width: 34px;
+    height: 2px;
+    background: #387;
+}
+.left-node:before,
+.left-node .node.primary:before {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 25px;
+    top: -10px;
+    transform: rotateZ(-45deg);
+    width: 32px;
+    height: 2px;
+    background: #387;
 }
