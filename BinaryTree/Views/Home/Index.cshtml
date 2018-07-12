@@ -1,0 +1,67 @@
+﻿@model IEnumerable<BinaryTree.Models.Person>
+@{
+    ViewBag.Title1 = "Binary";
+    ViewBag.Title2 = "Tree";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<div class="col-md-5">
+    <h3 class="h-c"><span>Graph</span> <span>BINARY TREE</span></h3>
+    <br>
+    <div>
+        <div class="graph">
+            <div class="node">
+                <div class="value">1</div>
+                <br>
+                <div class="child">
+                    <div class="node left-node">
+                        <div class="value">2</div>
+                        <div class="node primary">
+                            <div class="value">4</div>
+                            <br>
+                            <div class="child">
+                                <div class="node left-node">
+                                    <div class="value">7</div>
+                                </div>
+                                <div class="node right-node">
+                                    <div class="value">8</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="node right-node">
+                        <div class="value">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg id="graph"></svg>
+    </div>
+</div>
+<div class="col-md-7">
+    <h3 class="h-c">Table</h3>
+    <br>
+    <table class="table text-center table-hover">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th> @Html.DisplayNameFor(model => model.LastName)</th>
+                <th> @Html.DisplayNameFor(model => model.FirstName)</th>
+                <th>  @Html.DisplayNameFor(model => model.Age)</th>
+                <th> @Html.DisplayNameFor(model => model.Salary)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model) {
+                <tr>
+                    <td> @Html.DisplayFor(modelItem => item.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.LastName)</td>
+                    <td> @Html.DisplayFor(modelItem => item.FirstName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Age)</td>
+                    <td> @Html.DisplayFor(modelItem => item.Salary)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
