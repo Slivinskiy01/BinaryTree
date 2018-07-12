@@ -1,0 +1,20 @@
+.h-c {
+    text-align: center;
+    text-transform: uppercase;
+}
+.h-c span:first-child {
+    border-bottom: 3px solid #497e00;
+}
+.h-c span:last-child {
+    font-weight: 400; 
+    color:#497e00;
+}
+.table thead tr th {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+}
+.footer a{
+    margin: 0 10px;
+}
